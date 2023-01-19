@@ -15,8 +15,6 @@ app.set('view engine', 'pug');
 // set up static file path
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(express.static(path.join(__dirname, 'Image')));
-
 // page routes
 app.get('/', (request, response) => {
     // response.status(200).send('test Page 1');

@@ -4,11 +4,10 @@
 }
 body {
   background-color: beige;
-  /* padding: 15px; */
 }
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .header-content {
   display: flex;
@@ -18,6 +17,21 @@ a {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 600;
   padding: 15px;
+  border-bottom: 5px solid black;
+  align-items: center;
+}
+#menu li {
+  display: inline;
+  text-align: center;
+}
+#intro {
+  padding: 20px 100px;
+  text-align: center;
+}
+#intro h1,
+p,
+img {
+  padding-bottom: 10px;
 }
 .nav-menu {
   padding: 0 15px;
@@ -25,14 +39,45 @@ a {
 #main {
   padding: 25px;
 }
-#intro {
-  padding: 15px 100px;
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: black;
   color: beige;
-  margin: 3px;
+  text-align: center;
+  padding: 5px;
+}
+#about-image {
+  border-radius: 15px;
+  border: 2px solid black;
+}
+#about_detail img {
+  float: left;
+  margin-right: 20px;
+}
+#about_detail p {
+  font-size: 20px;
+  word-spacing: 10px;
+}
+.about_sign-up {
+  margin: 20px 0;
+}
+a:hover {
+  color: rgb(243, 164, 69);
+  background-color: rgb(137, 137, 129);
+}
+.index_img {
+  border-radius: 10px;
+}
+.adcard {
+  width: 200px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  background-color: rgb(224, 219, 219);
+  box-shadow: 0 0 15px rgb(22, 22, 22);
+  margin: 20px;
+  border-radius: 10px;
 }

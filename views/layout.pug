@@ -2,22 +2,23 @@ block variables
 doctype html
 html
     head
-        meta(charset='utf-8')
+        meta(charset="utf-8")
         title #{title} | HobbyHives
-        link(rel='stylesheet', type='text/css', href='/style.css')
+        link(rel="stylesheet", type="text/css", href="/style.css")
     body
-        header#header
-            .header-content
-                h2.nav-bar
-                    a(href='/') HobbyHives
-                ul.nav-bar
-                    li:a.nav-menu(href='/') Home
-                    li:a.nav-menu(href='/seller') Seller
-                    li:a.nav-menu(href='/about') About
-            div#intro
-                h1 Welcome to HobbyHives! 
-                p "Unlock your earning potential by turning your hobby into a business. Get the value you deserve without sacrificing your passion. Join our community of like-minded sellers who work on their hobby and earn money doing what they love."
-        main#main
-            block main-content
-        footer#footer
-            p &copy; Copyright HTTP5211, 2023.
+        #body-wrapper
+            header#header
+                .header-content
+                    h2#title
+                        a(href="/") HobbyHives
+                    ul#menu
+                        li
+                            a.nav-menu(href="/") Home
+                        li
+                            a.nav-menu(href="/") Seller
+                        li
+                            a.nav-menu(href="/about") About
+            main#main
+                block main-content
+            footer
+                p &copy; Copyright HTTP5211, 2023.
